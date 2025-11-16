@@ -1,0 +1,14 @@
+{
+    "answers": {
+        "request001": {
+            "relevance": {
+                "0": 0.75,
+                "1": 1.0
+            },
+            "result": "true"
+        },
+        "request002": {
+            "result": "false"
+        }
+    }
+}

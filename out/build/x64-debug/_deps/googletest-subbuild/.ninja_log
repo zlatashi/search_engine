@@ -1,0 +1,22 @@
+# ninja log v6
+4241	4978	7849450898866990	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	c9dc7b233b7784a7
+6561	7487	7849450923098394	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	908405044b717ef2
+5	762	7849323855859487	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	6ac9daf5d7b5e47c
+5	762	7849323855859487	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	6ac9daf5d7b5e47c
+5	4239	7849450891286993	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	99e67c731876733f
+8688	9212	7849450942835248	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	333fd70800edcd32
+5	4239	7849450891286993	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	99e67c731876733f
+4978	5550	7849450905456993	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	b5252516257ace85
+5550	6561	7849450913782997	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	aacd12026cd1bd95
+4241	4978	7849450898866990	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	c9dc7b233b7784a7
+4978	5550	7849450905456993	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	b5252516257ace85
+8688	9212	7849450942835248	CMakeFiles/googletest-populate-complete	333fd70800edcd32
+5550	6561	7849450913782997	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	aacd12026cd1bd95
+6561	7487	7849450923098394	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	908405044b717ef2
+7489	8143	7849450931609968	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	78658dc23725948d
+7489	8143	7849450931609968	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	78658dc23725948d
+8144	8687	7849450937645585	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	ae1a62d74e9308e6
+8144	8687	7849450937645585	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	ae1a62d74e9308e6
+8688	9212	7849450942835248	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	333fd70800edcd32
+8688	9212	7849450942835248	C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	333fd70800edcd32
+7	2204	7850106420695573	build.ninja	bd74c399ae23546c

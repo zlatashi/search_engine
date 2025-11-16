@@ -1,0 +1,24 @@
+#pragma once
+#include "InvertedIndex.h"
+#include <vector>
+#include <string>
+
+struct RelativeIndex {
+    size_t doc_id;
+    float rank;
+    bool operator==(const RelativeIndex& other) const {
+        return doc_id == other.doc_id && rank == other.rank;
+    }
+};
+
+class SearchServer {
+public:
+    static constexpr size_t TOP_RESULTS = 5;
+
+    SearchServer(InvertedIndex& idx) : _index(idx) {}
+
+    std::vector<std::vector<RelativeIndex>> search(const std::vector<std::string>& queries_input);
+
+private:
+    InvertedIndex& _index;
+};
