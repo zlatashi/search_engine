@@ -38,18 +38,18 @@ ITBoxSearch/
 
 -> Сборка проекта
 
- 1. Создать папку для сборки:
+Создать папку для сборки:
 mkdir out
 cd out
 mkdir build
 cd build
 
-  2. Запустить CMake:
+Запустить CMake:
 cmake ../..
 cmake --build .
 * Файлы ITBoxSearch.exe и runTests.exe появятся в out/build.
 
-  3. Запуск
+Запуск
 - Основной исполняемый файл:
 ./ITBoxSearch.exe
 
