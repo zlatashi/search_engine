@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/runTests[1]_tests.cmake")
-  include("C:/Users/user/source/repos/ITBoxSearch/out/build/x64-debug/runTests[1]_tests.cmake")
-else()
-  add_test(runTests_NOT_BUILT runTests_NOT_BUILT)
-endif()
