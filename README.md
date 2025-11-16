@@ -39,7 +39,6 @@ ITBoxSearch/
 -> Сборка проекта
 
  1. Создать папку для сборки:
-    ```bash
 mkdir out
 cd out
 mkdir build
