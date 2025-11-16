@@ -12,42 +12,53 @@
     Полное соответствие техническому заданию Skillbox.
 
 -> Структура проекта
-search_engine/
-├── src/                  # исходники (.cpp и .h)
-├── tests/                # юнит-тесты с Google Test
-├── external/             # библиотеки для JSON и GTest
-├── CMakeLists.txt        # основной CMake
-├── README.md             # этот файл
-└── out/                  # папка сборки
-    └── build-x64-Debug/  # здесь создается исполняемый файл
-        ├── search_engine.exe
-        ├── config.json
-        ├── requests.json
-        ├── answers.json   # создаётся программой автоматически
-        └── resources/    # текстовые файлы для поиска
-            ├── file001.txt
-            ├── file002.txt
-            └── …
 
--> Настройка и запуск
-   1. Клонируйте репозиторий:
-git clone https://github.com/username/repo_name.git
-cd repo_name
+ITBoxSearch/
+├── CMakeLists.txt
+├── src/
+│ ├── ConverterJSON.cpp
+│ ├── ConverterJSON.h
+│ ├── InvertedIndex.cpp
+│ ├── InvertedIndex.h
+│ ├── SearchServer.cpp
+│ ├── SearchServer.h
+│ └── main.cpp
+├── tests/
+│ ├── test_inverted_index.cpp
+│ └── test_search_server.cpp
+├── external/
+│ ├── nlohmann/json.hpp
+│ └── googletest/
+├── resources/
+│ ├── file001.txt
+│ └── file002.txt
+├── config.json
+├── requests.json
+└── out/ (создаётся автоматически)
 
-   2. Создайте папку сборки:
-mkdir -p out/build-x64-Debug
-cd out/build-x64-Debug
+-> Сборка проекта
 
-   3. Скопируйте в эту папку папку resources и файлы config.json, requests.json из репозитория:
-cp -r ../../../resources .
-cp ../../../config.json .
-cp ../../../requests.json .
+ 1. Создать папку для сборки:
+    ```bash
+mkdir out
+cd out
+mkdir build
+cd build
 
-   4. Соберите проект с помощью CMake:
-cmake ../../..
-cmake --build . --config Debug
+  2. Запустить CMake:
+cmake ../..
+cmake --build .
+* Файлы ITBoxSearch.exe и runTests.exe появятся в out/build.
 
-   5. Запустите программу:
-./search_engine
+  3. Запуск
+- Основной исполняемый файл:
+./ITBoxSearch.exe
 
-   6. После работы в папке появится answers.json с результатами поиска.
+ - Тесты:
+./runTests.exe
+
+
+# Примечания
+Папка out/ не заливается в GitHub, создаётся локально.
+Все внешние зависимости находятся в external/ и уже включены в репозиторий.
+config.json и requests.json автоматически создаются при сборке.
