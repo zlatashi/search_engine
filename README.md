@@ -1,63 +1,23 @@
-# search_engine
+# Search Engine Project
 
--> Описание проекта:
-    Проект реализует поисковый движок для корпоративного портала.
-    Программа ищет слова по набору текстовых документов и выдаёт наиболее релевантные результаты в формате JSON.
+## Описание проекта
+Реализация поискового движка для корпоративного портала.
 
--> Особенности:
-    Индексация документов в многопоточном режиме;
-    Расчёт абсолютной и относительной релевантности документов;
-    Настройка через config.json;
-    Получение запросов через requests.json и запись результатов в answers.json;
-    Полное соответствие техническому заданию Skillbox.
+## Стек технологий
+- C++17
+- Google Test
+- JSON for Modern C++
 
--> Структура проекта
+## Структура проекта
+- `src/` – исходные коды
+- `tests/` – модульные тесты
+- `resources/` – файлы для поиска
+- `CMakeLists.txt` – сборка проекта
 
-ITBoxSearch/
-├── CMakeLists.txt
-├── src/
-│ ├── ConverterJSON.cpp
-│ ├── ConverterJSON.h
-│ ├── InvertedIndex.cpp
-│ ├── InvertedIndex.h
-│ ├── SearchServer.cpp
-│ ├── SearchServer.h
-│ └── main.cpp
-├── tests/
-│ ├── test_inverted_index.cpp
-│ └── test_search_server.cpp
-├── external/
-│ ├── nlohmann/json.hpp
-│ └── googletest/
-├── resources/
-│ ├── file001.txt
-│ └── file002.txt
-├── config.json
-├── requests.json
-└── out/ (создаётся автоматически)
-
--> Сборка проекта
-
-Создать папку для сборки:
-mkdir out
-cd out
+## Сборка и запуск
+```bash
 mkdir build
 cd build
-
-Запустить CMake:
-cmake ../..
+cmake ..
 cmake --build .
-* Файлы ITBoxSearch.exe и runTests.exe появятся в out/build.
-
-Запуск
-- Основной исполняемый файл:
-./ITBoxSearch.exe
-
- - Тесты:
-./runTests.exe
-
-
-# Примечания
-Папка out/ не заливается в GitHub, создаётся локально.
-Все внешние зависимости находятся в external/ и уже включены в репозиторий.
-config.json и requests.json автоматически создаются при сборке.
+./search_engine
