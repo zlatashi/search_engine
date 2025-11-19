@@ -1,4 +1,6 @@
-### Windows ###
+# -------------------
+# Windows
+# -------------------
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -13,7 +15,9 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 
+# -------------------
 # CMake
+# -------------------
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -21,7 +25,9 @@ Makefile
 build/
 out/
 
+# -------------------
 # Visual Studio
+# -------------------
 .vs/
 *.vcxproj.user
 *.suo
